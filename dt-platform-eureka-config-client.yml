@@ -15,7 +15,7 @@ eureka:
     fetch-registry: true #false 表示自己就是注册中心，职责就是维护服务实例，并不需要去检索服务   #集群时 要设置为true
     service-url:
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #设置与eureka server 交互的地址查询服务和注册服务都需要依赖的地址单机版胚子
-      defaultZone: http://eurka02.com:7002/eureka  #集群配置
+      defaultZone: http://eurka01.com:7001/eureka  #集群配置
 info:   #追加微服务 信息 
   app.name: eurka-server
   company.name: www.zjx.com
@@ -41,7 +41,7 @@ eureka:
     fetch-registry: true #false 表示自己就是注册中心，职责就是维护服务实例，并不需要去检索服务   #集群时 要设置为true
     service-url:
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #设置与eureka server 交互的地址查询服务和注册服务都需要依赖的地址单机版胚子
-      defaultZone: http://eurka02.com:7002/eureka  #集群配置
+      defaultZone: http://eurka01.com:7001/eureka   #集群配置
 info:   #追加微服务 信息 
   app.name: eurka-server
   company.name: www.zjx.com
